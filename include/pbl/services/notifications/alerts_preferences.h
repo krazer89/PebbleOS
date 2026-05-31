@@ -155,6 +155,15 @@ void alerts_preferences_set_speaker_volume(uint8_t volume);
  */
 uint8_t alerts_preferences_get_speaker_volume(void);
 
+
+//! Set whether hourly beep notification is enabled.
+//! @param enable true to enable hourly beep, false to disable
+void alerts_preferences_set_hourly_beep_enabled(bool enable);
+
+//! @return Whether hourly beep notification is enabled
+bool alerts_preferences_get_hourly_beep_enabled(void);
+
+
 /**
  * @brief Check whether a "first use" dialog has been shown, and mark it as shown.
  *
