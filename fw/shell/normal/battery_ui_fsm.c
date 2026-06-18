@@ -193,7 +193,8 @@ static void prv_display_plugged(void *data) {
   if (!do_not_disturb_is_active()) {
     vibes_short_pulse();
   }
-  battery_ui_display_plugged();
+  const uint8_t percent = pbl_ratio32_to_percent(((PreciseBatteryChargeState *)data)->charge_percent);
+  battery_ui_display_plugged(percent);
 }
 
 static void prv_dismiss_plugged(void) {
