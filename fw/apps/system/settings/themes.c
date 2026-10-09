@@ -5,6 +5,9 @@
 
 #include "menu.h"
 #include "option_menu.h"
+#include "window.h"
+
+#include <kernel/pbl_malloc.h>
 
 #include <pbl/services/i18n/i18n.h>
 #include <pbl/util/size.h>
